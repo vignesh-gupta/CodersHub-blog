@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { PostCard , PostWidgets , Categories } from '../components';
 import { getPosts } from '../services'
 
-export default function Home ({posts}){ 
+export default function Home ({posts:[]}){ 
   
   return (
   <div className="container mx-auto px-10 mb-8 ">

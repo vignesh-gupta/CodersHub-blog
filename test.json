@@ -1,0 +1,23 @@
+{
+    "author": {
+        "bio": "CEO & Founder of CodersHub",
+        "name": "Vignesh Gupta",
+        "id": "ckztvi10g146c0c600ycbybrm",
+        "photo": {
+            "url": "https://media.graphcms.com/JvLlHFn5TpqQrvENBu3w"
+        }
+    },
+    "createdAt": "2022-02-20T08:01:50.303492+00:00",
+    "slug": "why-you-should-learn-web-development-top-7-reasons",
+    "title": "Why You Should Learn Web Development — Top 7 Reasons",
+    "excerpt": "In today’s modern world, we visit websites and web applications daily. From shopping for products on the Internet to looking for information about specific topics, everything is done on the World Wide Web. Website...",
+    "featuredImage": {
+        "url": "https://media.graphcms.com/WsQXQvUTQiQ3lFwfzjEy"
+    },
+    "categories": [
+        {
+            "name": "Web Development",
+            "slug": "webdev"
+        }
+    ]
+}

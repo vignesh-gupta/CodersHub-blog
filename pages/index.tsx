@@ -1,10 +1,9 @@
-// import type { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import { PostCard , PostWidgets , Categories } from '../components';
 import { getPosts } from '../services'
 
-export default function Home ({posts:[]}){ 
-  
+const Home: NextPage<{ posts: [Post] }> = ({ posts }) => { 
   return (
   <div className="container mx-auto px-10 mb-8 ">
     <Head>
@@ -17,7 +16,7 @@ export default function Home ({posts:[]}){
       </div>
       <div className='lg:col-span-4 col-span-1 '>
         <div className="lg:sticky reative top-8">
-          <PostWidgets />
+          <PostWidgets categories={undefined} slug={undefined} />
           <Categories />
         </div>
       </div>
@@ -26,6 +25,10 @@ export default function Home ({posts:[]}){
   </div>
 )}
 
+export default Home;
+
+
+// export default Home;
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];

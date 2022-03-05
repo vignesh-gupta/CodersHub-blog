@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import { PostCard , PostWidgets , Categories } from '../components';
 import { getPosts } from '../services'
 
-const Home: NextPage<{ posts: [Post] }> = ({ posts }) => { 
+export default function Home({posts}:{posts:any[]}) {
   return (
   <div className="container mx-auto px-10 mb-8 ">
     <Head>
@@ -25,7 +24,6 @@ const Home: NextPage<{ posts: [Post] }> = ({ posts }) => {
   </div>
 )}
 
-export default Home;
 
 
 // export default Home;
